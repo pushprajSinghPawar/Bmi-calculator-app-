@@ -6,3 +6,8 @@ it does this calculation..
 ```
 do this to download my app
 ```
+
+```
+just
+download the app-release.apk
+```

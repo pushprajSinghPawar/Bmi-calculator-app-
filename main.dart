@@ -154,7 +154,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(
                   // ignore: duplicate_ignore
                   onPressed: () {
-                    int Wt = int.parse(Weightt.text.toString());
+                    setState(
+                      (){
+                        int Wt = int.parse(Weightt.text.toString());
                     double Ht = double.parse(Heightt.text.toString());
                     Ht = Ht / 100;
                     int Ag = int.parse(Agee.text.toString());
@@ -168,6 +170,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     print('bmi = $bmi , $bmi2');
                     BMII.text = bmi2.toString();
                     print('**************************************');
+                      }
+                    );
                   },
                   child: Text('Calculate The Bmi ')),
               SizedBox(
